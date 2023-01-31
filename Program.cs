@@ -53,7 +53,11 @@ namespace BasicExercises
             //BasicEx38();
             //BasicEx39();
             //BasicEx40();
-            BasicEx41();
+            //BasicEx41();
+           // BasicEx42();
+            //BasicEx43();
+           // BasicEx44();
+            
 
             Console.ReadLine();
         }
@@ -683,10 +687,62 @@ namespace BasicExercises
             
             Console.WriteLine(query);
         }
-    
-    
-    
-    
-    
+
+         public static void BasicEx42()
+         {
+             // Write a C# program to create a new string where the first 4 characters will be in lower case. If the string is less than 4 characters then make the whole string in upper.
+             Console.WriteLine("Insert sentence below:");
+             var input = Console.ReadLine();
+
+             if (input.Length >= 4)
+             {
+                 var output = input.Substring(0, 4).ToLower();
+                 Console.WriteLine(output);
+             }
+             else
+             {
+                 Console.WriteLine(input.ToUpper());
+             }
+         }
+
+         public static void BasicEx43()
+         {
+             // Write a C# program to check if a given string starts with "w" and immediately followed by two "ww". 
+             Console.WriteLine("Insert sentence below:");
+             var input    = Console.ReadLine();
+
+             if (input.Substring(0, 5) == "wwwww")
+             {
+                 Console.WriteLine(true);
+             }
+             else
+             {
+                 Console.WriteLine(false);
+             }
+         }
+
+         public static void BasicEx44()
+         {
+             // Write a C# program to create a new string of every other character (odd position) from the first position of a given string.
+             Console.WriteLine("Insert sentence below:");
+             var input = Console.ReadLine();
+             var empty = "";
+             
+             for (int i = 0; i < input.Length; i++)
+             {
+                 if ((i + 1) % 2 != 0)
+                 {
+                     empty += input[i];
+                 }
+             }
+
+             Console.WriteLine(empty);
+         }
+
+         public static void BasicEx45()
+         {
+             // Write a C# program to count a specified number in a given array of integers. 
+             
+         }
     }
 }
