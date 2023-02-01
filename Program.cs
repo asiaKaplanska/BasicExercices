@@ -12,53 +12,53 @@ namespace BasicExercises
         public static void Main(string[] args)
         {
             // ***** Basic ***** //
-            /*  BasicEx1();
-              BasisEx2(3, 5);
-              BasicEx3(6, 2);
-              BasicEx3(6, 0);
-              BasicEx4();
-              BasicEx5(5, 6);*/
-            // BasicEx6();
-            /* BasicEx7();
-             BasicEx8();
-             BasicEx9();
-             BasicEx10();
-             BasicEx11();
-             BasicEx12();
-             BasicEx13();
-             BasicEx14();
-             BasicEx15();*/
-            //BasicEx16();
-            //BasicEx17();
-            //BasicEx18();
-            //BasicEx19();
-            //BasicEx20();
-            //BasicEx21();
-            //
-            //BasicEx23();
-            //BasicEx24();
-            /*BasicEx25();
+            /*BasicEx1();
+            BasisEx2(3, 5);
+            BasicEx3(6, 2);
+            BasicEx3(6, 0);
+            BasicEx4();
+            BasicEx5(5, 6);
+            BasicEx6();
+            BasicEx7();
+            BasicEx8();
+            BasicEx9();
+            BasicEx10();
+            BasicEx11();
+            BasicEx12();
+            BasicEx13();
+            BasicEx14();
+            BasicEx15();
+            BasicEx16();
+            BasicEx17();
+            BasicEx18();
+            BasicEx19();
+            BasicEx20();
+            BasicEx21();
+            BasicEx23();
+            BasicEx24();
+            BasicEx25();
             BasicEx26();
             BasicEx27();
             BasicEx28();
-            BasicEx29();*/
-            //BasicEx30();
-            //BasicEx31();
-            //BasicEx32();
-            //BasicEx33();
-            //BasicEx34();
-            //BasicEx35();
-            //BasicEx36();
-            //BasicEx37();
-            //BasicEx38();
-            //BasicEx39();
-            //BasicEx40();
-            //BasicEx41();
-           // BasicEx42();
-            //BasicEx43();
-           // BasicEx44();
+            BasicEx29();
+            BasicEx30();
+            BasicEx31();
+            BasicEx32();
+            BasicEx33();
+            BasicEx34();
+            BasicEx35();
+            BasicEx36();
+            BasicEx37();
+            BasicEx38();
+            BasicEx39();
+            BasicEx40();
+            BasicEx41();
+            BasicEx42();
+            BasicEx43();
+            BasicEx44();
+            BasicEx45();*/
+            BasicEx46();
             
-
             Console.ReadLine();
         }
         private static void BasicEx1()
@@ -742,7 +742,33 @@ namespace BasicExercises
          public static void BasicEx45()
          {
              // Write a C# program to count a specified number in a given array of integers. 
+             Console.WriteLine("Insert 5 integers: ");
+             int[] integers = new int[5];
+
+             for (int i = 0; i < 5; i++)
+             {
+                 Console.Write($"{i + 1}. input: ");
+                 integers[i] = int.Parse(Console.ReadLine());
+             }
+
+             Console.Write("Insert specified number to count: ");
+             var countNumber = int.Parse(Console.ReadLine());
+             var query       = Array.FindAll(integers, x => x == countNumber).Length;
+             Console.WriteLine($"Number of {countNumber} present in the said array {query} times");
+         }
+
+         public static void BasicEx46()
+         {
+             // Write a C# program to check if a number appears as either the first or last element of an array of integers and the length is 1 or more. 
+             int[] nums = {1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 9};
              
+             Console.Write("Insert integer: ");
+             var input = int.Parse(Console.ReadLine());
+
+             if ((input == nums.First() || input == nums.Last()) && kurka
+             {
+                 Console.WriteLine(true);
+             }
          }
     }
 }
